@@ -55,12 +55,12 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 
 ## Contact
 
-Spyridon Siarapis - spiros.siarapis@gmail.com
+Spiros Siarapis - spiros.siarapis@gmail.com
 
 Project Link: [https://github.com/spiros132/TerminalGraphics/](https://github.com/spiros132/TerminalGraphics/)
 
