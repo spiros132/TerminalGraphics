@@ -1,15 +1,24 @@
 #pragma once
+#include <cstdlib>
 #include <menu.hpp>
 
 class Menu;
 
+/**
+ * @brief Uses standard output to write to the console
+ * 
+ */
 class Window {
     private:
-    Menu* current_menu;
+    Menu* current_menu = nullptr;
+    int width, height;
+    bool run = false;
 
     public:
-    Window(Menu* starting_menu);
-    ~Window();
+    Window(int width, int height)
+    :width(width), height(height) {}
+    ~Window() {}
+
 
     /**
      * @brief Set the current menu that is displaying in this window
@@ -25,9 +34,32 @@ class Window {
      */
     Menu* get_menu();
 
+
     /**
      * @brief Update the current window
      * 
      */
     void update();
+
+    /**
+     * @brief Tell the window to close itself
+     * 
+     */
+    void quit();
+
+    bool is_running();
+
+    /**
+     * @brief Get the width of the window
+     * 
+     * @return the width
+     */
+    int get_width();
+
+    /**
+     * @brief Get the height of the window
+     * 
+     * @return the height
+     */
+    int get_height();
 };
