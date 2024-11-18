@@ -1,3 +1,4 @@
 /.cache
 /build
 /CMakePresets.json
+/.vscode
