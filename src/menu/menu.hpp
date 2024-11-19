@@ -126,6 +126,13 @@ class Menu {
     int get_height();
 
     /**
+     * @brief Get the current menu settings for this menu
+     * 
+     * @return The current menu settings
+     */
+    MenuSettings& get_settings();
+
+    /**
      * @brief Function called at the start of this menu's lifecycle
      * 
      */

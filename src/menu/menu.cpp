@@ -21,6 +21,10 @@ int Menu::get_height() {
         return settings.custom_height;
 }
 
+MenuSettings& Menu::get_settings() {
+    return settings;
+}
+
 void Menu::set_char(int x, int y, char c) {
     // Only add this character if it's within the width / height range
     if( (0 <= x && x < get_width()) &&
